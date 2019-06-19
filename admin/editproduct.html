@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="pages">
+        <header class="row">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Joy Apple</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right dropdown">
+                        <a href="#" class="navbar-text dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;"><i
+                                class="glyphicon glyphicon-user"></i>admin<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Thông tin</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i>Cài đặt</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav menu">
+                <li class="active"><a class="" href="index.html"><i class="glyphicon glyphicon-signal"></i> Tổng quan</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Danh Mục</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Bài viết</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> Banner QC</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Quản lý thành viên</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i> Log out</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-lg-10">
+            <h1 class="page-header">Thêm sản phẩm</h1>
+            <div class="row">
+                <div class="col-xs-6 col-md-12 col-lg-12">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="_token" value="P2SCRqCXxG68UzWYKMxN3gQRZPhAg8sgWW0dvW8B">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Thêm sản phẩm</div>
+                            <div class="panel-body">
+                                <div class="row" style="margin-bottom:40px">
+                                    <div class="col-xs-8">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <label>Danh mục</label>
+                                                    <select name="category" class="form-control">
+                                                        <option value='1' selected>iphone</option>
+                                                        <option value='2'>ipad</option>
+                                                        <option value='3'>watch</option>
+                                                        <option value='4'>macbook</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Mã sản phẩm</label>
+                                                    <input required type="text" name="product_code" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Tên sản phẩm</label>
+                                                    <input required type="text" name="product_name" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Giá sản phẩm (Giá chung)</label>
+                                                    <input required type="number" name="product_price" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Trạng thái</label>
+                                                    <select required name="product_state" class="form-control">
+                                                        <option value="1">Còn hàng</option>
+                                                        <option value="0">Hết hàng</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label>Ảnh sản phẩm</label>
+                                                    <input id="img" type="file" name="product_img" class="form-control hidden"
+                                                        onchange="changeImg(this)">
+                                                    <img id="avatar" class="thumbnail" width="100%" height="350px" src="images/iphone-xs-max.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Thông tin</label>
+                                            <textarea required name="info" style="width: 100%;height: 100px;"></textarea>
+                                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-4">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body tabs">
+                            <label>Các thuộc Tính <a href="#"><span class="glyphicon glyphicon-cog"></span> Tuỳ chọn</a></label>
+                            <ul class="nav nav-tabs">
+                                <li class='active'><a href="#tab17" data-toggle="tab">bộ nhớ</a></li>
+                                <li><a href="#tab18" data-toggle="tab">Màu sắc</a></li>
+                                <li><a href="#tab-add" data-toggle="tab">+</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade  active  in" id="tab17">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>64</th>
+                                                <th>256</th>
+                                                <th>512</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[17][60]"
+                                                        value="60"> </td>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[17][61]"
+                                                        value="61"> </td>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[17][64]"
+                                                        value="64"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <div class="form-group">
+                                        <form method="post">
+                                            <input type="hidden" name="_token" value="P2SCRqCXxG68UzWYKMxN3gQRZPhAg8sgWW0dvW8B">
+                                            <label for="">Thêm biến thể cho thuộc tính</label>
+                                            <input type="hidden" name="id_pro" value="17">
+                                            <input name="var_name" type="text" class="form-control" aria-describedby="helpId"
+                                                placeholder="">
+                                            <div> <button name="add_val" type="submit">Thêm</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade  in" id="tab18">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>vàng</th>
+                                                <th>đen</th>
+                                                <th>trắng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[18][62]"
+                                                        value="62"> </td>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[18][63]"
+                                                        value="63"> </td>
+                                                <td> <input class="form-check-input" type="checkbox" name="attr[18][65]"
+                                                        value="65"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <div class="form-group">
+                                        <form method="post">
+                                            <input type="hidden" name="_token" value="P2SCRqCXxG68UzWYKMxN3gQRZPhAg8sgWW0dvW8B">
+                                            <label for="">Thêm biến thể cho thuộc tính</label>
+                                            <input type="hidden" name="id_pro" value="18">
+                                            <input name="var_name" type="text" class="form-control" aria-describedby="helpId"
+                                                placeholder="">
+                                            <div> <button name="add_val" type="submit">Thêm</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-add">
+                                    <form action="" method="post">
+                                        <input type="hidden" name="_token" value="P2SCRqCXxG68UzWYKMxN3gQRZPhAg8sgWW0dvW8B">
+                                        <div class="form-group">
+                                            <label for="">Tên thuộc tính mới</label>
+                                            <input type="text" class="form-control" name="pro_name" aria-describedby="helpId"
+                                                placeholder="">
+                                        </div>
+                                        <button type="submit" name="add_pro" class="btn btn-success"> <span class="glyphicon glyphicon-plus"></span>
+                                            Thêm thuộc tính</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <p></p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Miêu tả</label>
+                            <textarea id="editor" required name="description" style="width: 100%;height: 100px;"></textarea>
+                            <script>
+                                CKEDITOR.replace( 'editor', {
+                                                filebrowserBrowseUrl: 'http://localhost/store/public/ckfinder/ckfinder.html',
+                                                filebrowserImageBrowseUrl: 'http://localhost/store/public/ckfinder/ckfinder.html?type=Images',
+                                                filebrowserFlashBrowseUrl: 'http://localhost/store/public/ckfinder/ckfinder.html?type=Flash',
+                                                filebrowserUploadUrl: 'http://localhost/store/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Files',
+                                                filebrowserImageUploadUrl: 'http://localhost/store/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Images',
+                                                filebrowserFlashUploadUrl: 'http://localhost/store/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Flash'
+                                                } );
+                                            </script>
+                        </div>
+                        <button class="btn btn-success" name="add-product" type="submit">Thêm sản phẩm</button>
+                        <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script >
+function changeImg(input){
+		    //Nếu như tồn thuộc tính file, đồng nghĩa người dùng đã chọn file mới
+		    if(input.files && input.files[0]){
+		        var reader = new FileReader();
+		        //Sự kiện file đã được load vào website
+		        reader.onload = function(e){
+		            //Thay đổi đường dẫn ảnh
+		            $('#avatar').attr('src',e.target.result);
+		        }
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+		$(document).ready(function() {
+		    $('#avatar').click(function(){
+		        $('#img').click();
+		    });
+		});
+</script>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="pages">
+        <header class="row">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Joy Apple</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right dropdown">
+                        <a href="#" class="navbar-text dropdown-toggle" data-toggle="dropdown"
+                            style="text-decoration: none;"><i class="glyphicon glyphicon-user"></i>admin<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Thông tin</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i>Cài đặt</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav menu">
+                <li class="active"><a class="" href="index.html"><i class="glyphicon glyphicon-signal"></i> Tổng
+                        quan</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Danh Mục</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Bài viết</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> Banner QC</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Quản lý thành viên</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i> Log out</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-lg-10 main">			
+            <h1>Chi tiết đặt hàng</h1>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Chi tiết đặt hàng</div>
+                        <div class="panel-body">
+                            <div class="bootstrap-table">
+                                <div class="table-responsive">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                    <div class="panel panel-primary">
+                                                            <div class="panel-heading dark-overlay">Thông tin khách hàng</div>
+                                                            <div class="panel-body">
+                                                                    <strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> : Nguyễn thế phúc</strong> <br>
+                                                                    <strong><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> : Số điện thoại: 0356653300</strong> <br>
+                                                                    <strong><span class="glyphicon glyphicon-send" aria-hidden="true"></span> : Thường tín</strong>
+                                                            </div>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                    </div>
+                                    <table class="table table-bordered" style="margin-top:20px;">				
+                                        <thead>
+                                            <tr class="bg-primary">
+                                                <th>ID</th>
+                                                <th >Thông tin Sản phẩm</th>
+                                                <th>Số lượng</th>
+                                                <th>Giá sản phẩm</th>
+                                                <th>Thành tiền</th>
+                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                                <img width="100px" src="img/ao-khoac.jpg" class="thumbnail">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <p>Mã sản phẩm: Sp01</p>
+                                                                <p>Tên Sản phẩm: <strong>Áo Khoác Bomber Nỉ Xanh Lá Cây AK179</strong></p>
+                                                                <div class="group-color">Color: 
+                                                                        <div class="product-color" style="background-color: brown;"></div> 
+                                                                </div>
+                                                                <p>Size:xl</p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                
+                                                </td>
+                                                <td>2</td>
+                                                <td>500.000 VNĐ</td>
+                                                <td>1.000.000 VNĐ</td>
+                                            
+                                            </tr>
+                                            <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                    <img width="100px" src="img/ao-khoac.jpg" class="thumbnail">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>Mã sản phẩm: SP02</p>
+                                                                    <p>Tên Sản phẩm: <strong>Áo Khoác Bomber Nỉ Xanh Lá Cây AK177</strong></p>
+                                                                    <div class="group-color">Color: 
+                                                                            <div class="product-color" style="background-color: blueviolet;"></div> 
+                                                                    </div>
+                                                                    <p>Size:xl</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>500.000 VNĐ</td>
+                                                    <td>500.000 VNĐ</td>
+                                                
+                                                </tr>
+                                        
+                                        </tbody>
+                                    
+                                    </table>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th width='70%'><h4 align='right'>Tổng Tiền :</h4></th>
+                                                <th><h4 align='right' style="color: brown;">1.500.000 VNĐ</h4></th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                        
+                                        </tbody>
+                                    </table>
+                                    <div class="alert alert-primary" role="alert" align='right'>
+                                        <a name="" id="" class="btn btn-success" href="#" role="button">Đã xử lý</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.row-->
+                
+            
+        </div>	
+    </div>
+    </div>
+</body>
+
+</html>

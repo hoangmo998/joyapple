@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="pages">
+        <header class="row">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Joy Apple</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right dropdown">
+                        <a href="#" class="navbar-text dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;"><span class="glyphicon glyphicon-user"></span>admin<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i> Thông tin</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Cài đặt</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav menu">
+                <li class="active"><a class="" href="index.html"><i class="glyphicon glyphicon-signal"></i> Tổng quan</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Danh Mục</a></li>
+                <li><a href="listproduct.html"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a></li>
+                <li><a href="baiviet.html"><i class="glyphicon glyphicon-pencil"></i> Bài viết</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> Banner QC</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Quản lý thành viên</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i> Log out</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-lg-10" id="bieudo">
+            <div class="row">
+                <h1 class="page-header">Tổng quan</h1>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="panel panel-blue panel-widget ">
+                        <div class="row no-padding">
+                            <div class="col-sm-3 col-lg-4 widget-left">
+                                <i class="glyphicon glyphicon-signal icon-50" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-sm-9 col-lg-8 widget-right">
+                               <p> 8.000.000 đ</p>
+                               <p> Doanh thu tháng 7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="panel panel-orange panel-widget">
+                        <div class="row no-padding">
+                            <div class="col-sm-3 col-lg-3 widget-left">
+                                <i class="glyphicon glyphicon-comment"></i>
+                            </div>
+                            <div class="col-sm-9 col-lg-3 widget-right">
+                                <p>52</p>
+                                <p>tương tác</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="panel panel-teal panel-widget">
+                        <div class="row no-padding">
+                            <div class="col-sm-3 col-lg-3 widget-left">
+                                <i class="glyphicon glyphicon-list-alt"></i>
+                            </div>
+                            <div class="col-sm-9 col-lg-9 widget-right">
+                                <p>24</p>
+                              <p>số đơn hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-info row">
+                <div class="panel-heading" style="font-size:25px;text-align: center;">Biểu đồ người dùng</div>
+                <hr>
+                <div class="panel-body">
+                    <div class="canvas-wrapper">
+                        <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

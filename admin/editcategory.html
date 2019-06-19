@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="pages">
+        <header class="row">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Joy Apple</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right dropdown">
+                        <a href="#" class="navbar-text dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;"><i
+                                class="glyphicon glyphicon-user"></i>admin<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Thông tin</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i>Cài đặt</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav menu">
+                <li class="active"><a class="" href="index.html"><i class="glyphicon glyphicon-signal"></i> Tổng quan</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Danh Mục</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="glyphicon plyphicon-pencil"></i> Bài viết</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> Banner QC</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Quản lý thành viên</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i> Log out</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-lg-10">
+            <h1 class="page-header">Danh mục</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+
+                            <div class="form-group">
+                                <label for="">Danh mục cha:</label>
+                                <select class="form-control" name="" id="">
+                                    <option>----ROOT----</option>
+                                    <option>iphone</option>
+                                    <option>macbook</option>
+                                    <option selected>watch</option>
+                                    <option>ipad</option>
+                                    <option>phụ kiện</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Tên Danh mục</label>
+                                <input type="text" class="form-control" name="name" id="" placeholder="Tên danh mục mới">
+
+                                <div class="alert alert-danger alert-dismissible" style="margin-top:3%">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    <strong class="glyphicon glyphicon-remove"></strong> thêm danh mục thất bại
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Thêm danh mục</button>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="alert alert-success alert-dismissible">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong class="glyphicon glyphicon-ok"></strong> thêm danh mục thành công
+                            </div>
+                            <ul class="list-group row" style="height:auto; font-size: 25px;">
+                                <li class="list-group-item list-group-item-info">
+                                    <h3>Phân Cấp Menu</h3>
+                                </li>
+                                <li class="list-group-item" style="height:auto;">
+                                    IPhone<span class="badge" style="background-color: white; ">
+                                        <a href="editcategory.html"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button></a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item" style="height:auto;">
+                                    IPad<span class="badge" style="background-color: white; ">
+                                        <a href="editcategory.html"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button></a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item" style="height:auto;">
+                                    MacBook<span class="badge" style="background-color: white; ">
+                                        <a href="editcategory.html"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button></a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item" style="height:auto;">
+                                    Apple Watch<span class="badge" style="background-color: white; ">
+                                        <a href="editcategory.html"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button></a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item" style="height:auto;">
+                                    Phụ kiện<span class="badge" style="background-color: white; ">
+                                        <a href="editcategory.html"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="#"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button></a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <title>joyapple</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>  
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                        </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="JoyApple"  src="images/logo1.jpg">
+                </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Trang chủ </span><span class="sr-only">(current)</span></a></li>
+                            <li><a href="list.html">Iphone</a></li>
+                            <li><a href="list.html">Ipad</a></li>
+                            <li><a href="list.html">Apple Watch</a></li>
+                            <li><a href="list.html">iPhone</a></li>
+                            <li><a href="list.html">Phụ Kiện</a></li>
+                            <li><a href="list.html">Khuyến mãi</a></li>
+                            <li><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i> Giỏ Hàng</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Nhập từ khóa cần tìm">
+                            </div>
+                            <button type="search" class="btn btn-default">Search</button>
+                          </form>
+                        <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);"> Đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/banner-1.jpg" alt="Los Angeles" style="width:100%;">
+                <div class="carousel-caption">
+                        <h3>iPhone</h3>
+                        <p>iPhone X </p>
+                 </div>
+              </div>
+        
+              <div class="item">
+                <img src="images/banner-1.jpg" alt="Chicago" style="width:100%;">
+                <div class="carousel-caption">
+                        <h3>iPhone</h3>
+                        <p>iPhone X </p>
+                 </div>
+              </div>
+            
+              <div class="item">
+                <img src="images/banner-1.jpg" alt="New york" style="width:100%;">
+                <div class="carousel-caption">
+                        <h3>iPhone</h3>
+                        <p>iPhone X </p>
+                 </div>
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+             <!--Quảng cáo-->
+<!--
+        <div class="row" id="giữa">
+            <div id="quảngcáo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators 
+                <ol class="carousel-indicators">
+                    <li data-target="#quảngcáo" data-slide-to="0" class="active"></li>
+                    <li data-target="#quảngcáo" data-slide-to="1"></li>
+                    <li data-target="#quảngcáo" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides 
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/banner-1.jpg" alt="banner-1" class="img-responsive" style="width:100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/banner-2.jpg" alt="banner-2" class="img-responsive" style="width:100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/banner-3.png" alt="banner-3" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+ 
+                <!-- Left and right controls 
+                <a class="left carousel-control" href="#quảngcáo" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#quảngcáo" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nen" style="background-image:url('images/nen.jpg')">
+                        <div>
+                            <p>Dùng thử Iphone 3 ngày</p>
+                            <p>1 đổi 1 trong 30 ngày</p>
+                            <a href="list.html">tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10  nen" style="background-image:url('images/nen1.jpg')">
+                        <div>
+                            <h3>khuyến mãi</h3>
+                            <p>cơ hội mua sản phẩm với giá ưu đãi</p>
+                            <a href="sales.html">tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Footer-->
+    <footer class="footer" id="cuối">
+
+			<div class="footer-center">
+                <p class="colorlib-widget">
+                <span>Thông tin JoyApple</span>
+                    <dl>
+                        <dt><a href="about.html">Giới thiệu</a></dt>                              
+                        <dt><a href="about.html">Tuyển dụng</a></dt>
+                    </dl>
+				</p>
+			</div>
+			<div class="footer-center">
+                <p class="colorlib-widget">
+                <span>Dịch Vụ & Hỗ Trợ</span>
+                    <dl>
+                        <dt><a href="about.html">Chính sách bảo hành</a></dt>                              
+                        <dt><a href="about.html">Chính sách đổi sản phẩm</a></dt>
+                        <dt><a href="about.html">Hướng dẫn mua hàng</dt>
+                        <dt><a href="about.html">Hỗ trợ</a></dt>
+                    </dl>
+                </p>
+			</div>
+			<div class="footer-right">
+				<p class="colorlib-widget">
+					<span>Địa Chỉ & Liên Hệ</span>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8707003953314!2d105.85029731440757!3d21.037858992844725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb89fd3bf01%3A0x2b4e9bc5193fcfab!2zNjRCIMSQxrDhu51uZyBUcuG6p24gTmjhuq10IER14bqtdCwgxJDhu5NuZyBYdcOibiwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1552299520713"
+                    width="100%" height="100%" frameborder="0" style="border:1px solid #999; margin-left: 0%;"
+                    allowfullscreen></iframe>				
+                </p>
+				<div class="footer-icons">
+                    
+					<a href="https://www.facebook.com/thegioiiphonezin/" target="_blank"><i class="icon-social-facebook" style="color:blue;"></i></a>
+					<a href="https://www.instagram.com/joyy_apple/" target="_blank"><i class="icon-social-instagram" style="color:palevioletred;"></i></a>
+                    <a href="#"><i class="icon-social-youtube" style="color:red;"></i></a>
+                    
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                    <p>
+                            <div class="copy">
+                                    <div class="row">
+                        <span class="block">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Bản quyền &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> thuộc JoyApple </span>
+                    </p>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>

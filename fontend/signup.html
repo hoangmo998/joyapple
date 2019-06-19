@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <title>Đăng ký</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                        </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="JoyApple"  src="images/logo1.jpg">
+                </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Trang chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="list.html">Iphone</a></li>
+                            <li><a href="list.html">Ipad</a></li>
+                            <li><a href="list.html">Apple Watch</a></li>
+                            <li><a href="list.html">MacBook</a></li>
+                            <li><a href="list.html">Phụ Kiện</a></li>
+                            <li><a href="list.html">Khuyến mãi</a></li>
+                            <li><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>Giỏ Hàng</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Nhập từ khóa cần tìm">
+                            </div>
+                            <button type="search" class="btn btn-default">Search</button>
+                          </form>
+                        <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);"> Đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse" >
+                <div class="container-fluid" style="background-color:black;">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                        <a href="index.html"><img src="images/logo1.jpg" alt="" style="width:70%; height:auto;"></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="navbar-brand" href="index.html">Trang chủ</a></li>
+                    </ul>
+                    <p class="navbar-text"><a href="list.html">Iphone</a></p>
+                    <p class="navbar-text"><a href="list.html">Ipad</a></p>
+                    <p class="navbar-text"><a href="list.html">Apple Watch</a></p>
+                    <p class="navbar-text"><a href="list.html">MacBook</a></p>
+                    <p class="navbar-text"><a href="list.html">Phụ Kiện</a></p>
+                    <p class="navbar-text"><a href="list.html">Khuyến mãi</a></p>
+                    <p class="navbar-text"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>giỏ hàng</a></p>
+                    <div class="navbar-text">
+                        <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="nhập từ khóa cần tìm">
+                               <button type="submit" class="searchButton">
+                                 <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                         </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li style="margin-left: -5%;"><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);">đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    -->
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Đăng ký tài khoản</li>
+                </ol>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="signup">
+                    <div class="row">
+                        <h1>Đăng ký tài khoản</h1>
+                        <div class="row">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="inputdefault">Tài khoản</label>
+                                    <input class="form-control" id="user" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputdefault">Mật khẩu</label>
+                                    <input class="form-control" id="password" type="password" placeholder="6-12 ký tự có phân biệt hoa thường">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputdefault">Nhập lại mật khẩu</label>
+                                    <input class="form-control" id="check" type="password" placeholder="nhập lại mật khẩu vừa tạo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputdefault">Email</label>
+                                    <input class="form-control" id="email" type="text" placeholder="ABCDEFGH@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputdefault">Số điện thoại</label>
+                                    <input class="form-control" id="password" type="number" placeholder="nhập số điện thoại của bạn để chúng tôi dễ dàng liên hệ">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputdefault">Địa chỉ</label>
+                                    <input class="form-control" id="password" type="adders" placeholder="địa chỉ của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">Giới tính</label>
+                                    <select class="form-control" id="sex">
+                                        <option value="0">Nam</option>
+                                        <option value="1">Nữ</option>
+                                        <option value="3">Khác</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-info">Xác nhận</button>
+                                <button type="submit" class="btn btn-danger">Hủy bỏ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            </div>
+        </div>
+        <footer class="footer" id="cuối">
+
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Thông tin JoyApple</span>
+                        <dl>
+                            <dt><a href="about.html">Giới thiệu</a></dt>                              
+                            <dt><a href="about.html">Tuyển dụng</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Dịch Vụ & Hỗ Trợ</span>
+                        <dl>
+                            <dt><a href="about.html">Chính sách bảo hành</a></dt>                              
+                            <dt><a href="about.html">Chính sách đổi sản phẩm</a></dt>
+                            <dt><a href="about.html">Hướng dẫn mua hàng</dt>
+                            <dt><a href="about.html">Hỗ trợ</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="colorlib-widget">
+                        <span>Địa Chỉ & Liên Hệ</span>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8707003953314!2d105.85029731440757!3d21.037858992844725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb89fd3bf01%3A0x2b4e9bc5193fcfab!2zNjRCIMSQxrDhu51uZyBUcuG6p24gTmjhuq10IER14bqtdCwgxJDhu5NuZyBYdcOibiwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1552299520713"
+                        width="100%" height="100%" frameborder="0" style="border:1px solid #999; margin-left: 0%;"
+                        allowfullscreen></iframe>				
+                    </p>
+                    <div class="footer-icons">
+                        
+                        <a href="#"><i class="icon-social-facebook" style="color:blue;"></i></a>
+                        <a href="#"><i class="icon-social-instagram" style="color:palevioletred;"></i></a>
+                        <a href="#"><i class="icon-social-youtube" style="color:red;"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                        <p>
+                                <div class="copy">
+                                        <div class="row">
+                            <span class="block">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Bản quyền &copy;<script>
+                                    document.write(new Date().getFullYear());
+                                </script> thuộc joyApple </span>
+                        </p>
+                    </div>
+            </footer>
+    </div>
+</body>
+
+</html>

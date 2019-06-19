@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="pages">
+        <header class="row">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Joy Apple</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right dropdown">
+                        <a href="#" class="navbar-text dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;"><i
+                                class="glyphicon glyphicon-user"></i>admin<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Thông tin</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i>Cài đặt</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav menu">
+                <li class="active"><a class="" href="index.html"><i class="glyphicon glyphicon-signal"></i> Tổng quan</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Danh Mục</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Bài viết</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> Banner QC</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Quản lý thành viên</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i> Log out</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-lg-10" id="main">
+            <h1>Danh sách bài viết</h1>
+            <div class="row">
+                <button type="button" class="btn btn-primary" id="myBtn">Thêm bài viết</button>
+                <table class="table table-hover" style="margin-top:2%">
+                      <thead>
+                          <tr class="bg-primary">
+                              <th>ID</th>
+                              <th>Tiêu đề</th>
+                              <th>Ảnh</th>
+                              <th>Nội dung</th>
+                              <th>Loại bài viết</th>
+                              <th>Ngày đăng</th>
+                              <th>Tùy chọn</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>
+                                  <p>tiêu đề bài viết</p>
+                              </td>
+                              <td>
+                                <img src="images/iphone-xs-max.jpg" alt="ip" width="100px"
+                                class="thumbnail">
+                              </td>
+                              <td>
+                                  <p>nội dung</p>
+                              </td>
+                              <td>
+                                  <p>loại bài viết</p>
+                              </td>
+                              <td>
+                                  <p>ngày đăng</p>
+                              </td>
+                              <td>
+                                <a type="button" class="btn btn-warning">sửa</a>
+                                <a type="button" class="btn btn-danger">xóa</a>
+                              </td>
+                          </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header" style="padding:35px 50px;">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <h1>Thêm bài viết</h1>
+</div>
+<div class="modal-body" style="padding:40px 50px;">
+    <form action="" method="post" enctype="multipart/form-data" >
+        <input type="hidden" name="_token" value="P2SCRqCXxG68UzWYKMxN3gQRZPhAg8sgWW0dvW8B">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Bài viết</div>
+            <div class="panel-body" style="padding:5%;">
+                <div class="row" style="margin-bottom:40px">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label>Danh mục bài viết</label>
+                                <select name="category" class="form-control">
+                                    <option value='1' selected>tin tức</option>
+                                    <option value='2'>sự kiện</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Tiêu đề bài viết</label>
+                                <input required type="text" name="product_code" class="form-control"
+                                    style="height:100px;">
+                            </div>
+                            <div class="form-group">
+                                <label>Nội dung bài viết</label>
+                                <textarea required name="info"
+                                    style="width: 100%;height: 200px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label>Ảnh bài viết</label>
+                                <input id="img" type="file" name="product_img"
+                                    class="form-control hidden" onchange="changeImg(this)">
+                                <img id="avatar" class="thumbnail" width="100%" height="350px"
+                                    src="images/84.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success btn-default pull-left"> Thêm bài viết</button>
+                <button type="button" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button>
+            </div>
+            
+    </form>
+    <script>
+        //modal
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+        });
+        function changeImg(input) {
+        //Nếu như tồn thuộc tính file, đồng nghĩa người dùng đã chọn file mới
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //Sự kiện file đã được load vào website
+            reader.onload = function (e) {
+                //Thay đổi đường dẫn ảnh
+                $('#avatar').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $(document).ready(function () {
+        $('#avatar').click(function () {
+            $('#img').click();
+        });
+    });
+        </script>
+</body>
+
+</html>

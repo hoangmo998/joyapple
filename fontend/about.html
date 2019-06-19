@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    
+        <title>Giới thiệu</title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                        </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="JoyApple"  src="images/logo1.jpg">
+                </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Trang chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="list.html">Iphone</a></li>
+                            <li><a href="list.html">Ipad</a></li>
+                            <li><a href="list.html">Apple Watch</a></li>
+                            <li><a href="list.html">MacBook</a></li>
+                            <li><a href="list.html">Phụ Kiện</a></li>
+                            <li><a href="list.html">Khuyến mãi</a></li>
+                            <li><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>Giỏ Hàng</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Nhập từ khóa cần tìm">
+                            </div>
+                            <button type="search" class="btn btn-default">Search</button>
+                          </form>
+                        <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);"> Đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse" >
+                <div class="container-fluid" style="background-color:black;">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                        <a href="index.html"><img src="images/logo1.jpg" alt="" style="width:70%; height:auto;"></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="navbar-brand" href="index.html">Trang chủ</a></li>
+                    </ul>
+                    <p class="navbar-text"><a href="list.html">Iphone</a></p>
+                    <p class="navbar-text"><a href="list.html">Ipad</a></p>
+                    <p class="navbar-text"><a href="list.html">Apple Watch</a></p>
+                    <p class="navbar-text"><a href="list.html">MacBook</a></p>
+                    <p class="navbar-text"><a href="list.html">Phụ Kiện</a></p>
+                    <p class="navbar-text"><a href="list.html">Khuyến mãi</a></p>
+                    <p class="navbar-text"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>giỏ hàng</a></p>
+                    <div class="navbar-text">
+                        <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="nhập từ khóa cần tìm">
+                               <button type="submit" class="searchButton">
+                                 <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                         </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li style="margin-left: -5%;"><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn btn-default navbar-btn" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);">đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    -->
+        <div class="row" id="about">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
+                </ol>
+           <!--- <div class="row page-header">
+                <nav class="navbar-nav" id="phụ">
+                    <a href="index.html">
+                        <p class="navbar-text">trang chủ /</p>
+                    </a>
+                    <a href="about.html">
+                        <p style="margin-left:0%;" class="navbar-text">giới thiệu</p>
+                    </a>
+                </nav>
+            </div> -->
+               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+               <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                   <h1>JoyApple Việt Nam (JAV) - Thế giới máy zin</h1>
+                   <p>JoyApple Việt Nam là cửa hàng chuyên cung cấp các sản phẩm, dịch vụ chính hãng của Apple cũ và mới. Những sản phẩm của cửa hàng bán ra đảm bảo chưa thay linh kiện, sửa chữa. Chính vì vậy, khi mua hàng tại đây, khách hàng không chỉ được đảm bảo yên tâm về chất lượng hàng chuẩn chính hãng mà còn tận hưởng dịch vụ tốt nhất.</p>
+                   <div class="row" style="height:auto;">
+                        <img src="images/minhbeo.jpg" alt="" style="width:45%; height:auto">
+                        <img src="images/audam.jpg" alt="" style="width:45%; height:auto">
+                   </div>
+                   <h3>Hàng chuẩn mà chất</h3>
+                   <p>Có thể thấy, những sản phẩm mang thương hiệu Apple dù có giá khá cao nhưng vẫn được người sử dụng yêu thích vì chất lượng vượt trội. Nhận thấy nhu cầu sử dụng hàng “Táo Khuyết” rất nhiều, nhiều nơi đã sản xuất hàng nhái, thu gom hàng cũ về sửa chữa, làm mới rồi bán ra thị trường với giá rẻ. Công nghệ lắp ráp vô cùng tinh vi khiến người dùng khó lòng phân biệt được. Những sản phẩm kém chất lượng này sau thời gian ngắn sử dụng thường bị lỗi, lại không được hưởng chính sách bảo hành toàn cầu của Apple, bán lại thì giá rất thấp.</p><br>
+                   <p>Thế nên nếu muốn sở hữu sản phẩm đảm bảo bảo chất lượng, bạn hãy đến joyApple. Tất cả sản phẩm iPhone, iPad, Macbook và phụ kiện Apple tại đây đều là hàng zin của Apple</p>
+                   <h3>Không nơi nào có chính sách bảo hành tại nhà cho khách hàng như ở joyApple</h3>
+                   <p>Tại joyApple, khách hàng có thể trải nghiệm, dùng thử và được tư vấn kỹ lưỡng trước khi quyết định mua hàng. Đặc biệt, nếu đăng ký làm thẻ khách hàng thân thiết, khách hàng sẽ nhận được chế độ bảo hành tại nhà.</p><br>
+                   <p>Chỉ cần gọi tới số hotline, đọc tên và số điện thoại, nhân viên kỹ thuật của joyApple sẽ đến tận nơi kiểm tra, mang máy đi bảo hành và trả máy về tận tay bạn ngay khi bảo hành xong. Với những trường hợp lỗi phần mềm hay hỏng nhẹ, kỹ thuật viên có thể khắc phục xử lý ngay tại chỗ trong vòng 15 - 30 phút. Quyền lợi này thực sự rất đáng giá với những khách hàng bận rộn, không có thời gian hoặc nhà ở xa.</p>
+                   <h3>Giao hàng và thanh toán tại nhà hoàn toàn miễn phí cũng là một điểm đặc biệt chỉ có ở joyApple</h3>
+                   <p>Khách hàng có thể xem và đặt mua sản phẩm bất kỳ trên website http://joyapple.com.vn hoặc có thể điện thoại trực tiếp tới cửa hàng để được tư vấn về sản phẩm và đặt hàng. Nhân viên joyApple sẽ giao máy và thu tiền tại nhà hoàn toàn miễn phí. Mọi dịch vụ, ưu đãi đều được nhận như mua tại cửa hàng.</p>
+                   <h3>Chăm sóc bằng cả tấm lòng</h3>
+                   <p>Dù khách hàng mua hàng Apple ở nơi khác hoặc mua tại joyApple đã lâu nhưng có thắc mắc về cách sử dụng sản phẩm vẫn có thể đến joyApple để được hỗ trợ nhiệt tình nhất. joyApple mang đến không gian trải nghiệm Apple thân thiện, luôn sẵn sàng chào đón mọi iFan. Hơn nữa, những khách hàng của joyApple có thể quay lại đây bất cứ lúc nào để được hỗ trợ cài đặt lại máy, nâng cấp phần mềm, vệ sinh máy miễn phí, tư vấn thêm cách sử dụng nâng cao cũng như giải đáp mọi câu hỏi của khách hàng một cách tận tình nhất.</p>
+                   <div class="row" id="map">
+                        <h2>Địa chỉ cửa hàng</h2>
+                        <div class="col-lg-4 col-md-4 col-sm-4 com-xs-4">
+                            <p>Chúng tôi chỉ có 1 địa chỉ duy nhất tại:<strong> 64b Trần Nhật Duật, Hoàn Kiếm, Hà Nội</strong></p>
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8707003953314!2d105.85029731440757!3d21.037858992844725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb89fd3bf01%3A0x2b4e9bc5193fcfab!2zNjRCIMSQxrDhu51uZyBUcuG6p24gTmjhuq10IER14bqtdCwgxJDhu5NuZyBYdcOibiwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1552299520713"
+                                width="100%%" height="auto" frameborder="0" style="border:1px solid #999; margin-left: 7%;"
+                                allowfullscreen></iframe>
+                        </div>
+                   </div>
+                </div>
+               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            </div>
+        </div>
+        <footer class="footer" id="cuối">
+
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Thông tin JoyApple</span>
+                        <dl>
+                            <dt><a href="about.html">Giới thiệu</a></dt>                              
+                            <dt><a href="about.html">Tuyển dụng</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Dịch Vụ & Hỗ Trợ</span>
+                        <dl>
+                            <dt><a href="about.html">Chính sách bảo hành</a></dt>                              
+                            <dt><a href="about.html">Chính sách đổi sản phẩm</a></dt>
+                            <dt><a href="about.html">Hướng dẫn mua hàng</dt>
+                            <dt><a href="about.html">Hỗ trợ</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="colorlib-widget">
+                        <span>Địa Chỉ & Liên Hệ</span>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8707003953314!2d105.85029731440757!3d21.037858992844725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb89fd3bf01%3A0x2b4e9bc5193fcfab!2zNjRCIMSQxrDhu51uZyBUcuG6p24gTmjhuq10IER14bqtdCwgxJDhu5NuZyBYdcOibiwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1552299520713"
+                        width="100%" height="100%" frameborder="0" style="border:1px solid #999; margin-left: 0%;"
+                        allowfullscreen></iframe>				
+                    </p>
+                    <div class="footer-icons">
+                        
+                        <a href="#"><i class="icon-social-facebook" style="color:blue;"></i></a>
+                        <a href="#"><i class="icon-social-instagram" style="color:palevioletred;"></i></a>
+                        <a href="#"><i class="icon-social-youtube" style="color:red;"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                        <p>
+                                <div class="copy">
+                                        <div class="row">
+                            <span class="block">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Bản quyền &copy;<script>
+                                    document.write(new Date().getFullYear());
+                                </script> thuộc joyApple </span>
+                        </p>
+                    </div>
+            </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    
+        <title>Chi tiết sản phẩm</title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                        </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="JoyApple"  src="images/logo1.jpg">
+                </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Trang chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="list.html">Iphone</a></li>
+                            <li><a href="list.html">Ipad</a></li>
+                            <li><a href="list.html">Apple Watch</a></li>
+                            <li><a href="list.html">MacBook</a></li>
+                            <li><a href="list.html">Phụ Kiện</a></li>
+                            <li><a href="list.html">Khuyến mãi</a></li>
+                            <li><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>Giỏ Hàng</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Nhập từ khóa cần tìm">
+                            </div>
+                            <button type="search" class="btn btn-default">Search</button>
+                          </form>
+                        <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);"> Đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---
+    <div class="container-fluid" id="trangchủ">
+        <header class="row" id="đầu">
+            <nav class="navbar navbar-inverse" >
+                <div class="container-fluid" style="background-color:black;">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                        <a href="index.html"><img src="images/logo1.jpg" alt="" style="width:70%; height:auto;"></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="navbar-brand" href="index.html">Trang chủ</a></li>
+                    </ul>
+                    <p class="navbar-text"><a href="list.html">Iphone</a></p>
+                    <p class="navbar-text"><a href="list.html">Ipad</a></p>
+                    <p class="navbar-text"><a href="list.html">Apple Watch</a></p>
+                    <p class="navbar-text"><a href="list.html">MacBook</a></p>
+                    <p class="navbar-text"><a href="list.html">Phụ Kiện</a></p>
+                    <p class="navbar-text"><a href="list.html">Khuyến mãi</a></p>
+                    <p class="navbar-text"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>giỏ hàng</a></p>
+                    <div class="navbar-text">
+                        <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="nhập từ khóa cần tìm">
+                               <button type="submit" class="searchButton">
+                                 <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                         </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" id="nút">
+                        <li style="margin-left: -5%;"><button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Đăng
+                                Nhập</button></li>
+                        <div class="modal fade" id="đăngnhập" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Đăng Nhập</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Mật Khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Ghi nhớ</label>
+                                            </div>
+                                            <p>Bạn chưa có tài khoản?<a href="signup.html" style="color:rgb(68, 145, 233);">đăng ký ngay</a></p>
+                                            <button type="submit" class="btn btn-default">Xác Nhận</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    -->
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="list.html">IPhone</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">IPhone XS max</li>
+                </ol>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-10" id="product-detail">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 xol-sm-6 col-xs-12" id="ảnh">
+                            <div class="row">
+                                <div class="tab-content">
+                                    <div id="ảnh1" class="tab-pane fade in active">
+                                        <img class="img-responsive" src="images/iphone-xs-max.jpg" alt="">
+                                    </div>
+                                    <div id="ảnh2" class="tab-pane fade">
+                                        <img class="img-responsive" src="images/iphone-xs-max.jpg" alt="">
+                                    </div>
+                                    <div id="ảnh3" class="tab-pane fade">
+                                        <img class="img-responsive" src="images/iphone-xs-max.jpg" alt="">
+                                    </div>
+                                    <div id="ảnh4" class="tab-pane fade">
+                                        <img class="img-responsive" src="images/iphone-xs-max.jpg" alt="">
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs" style="width:100%;height:100%">
+                                    <li class="active col-lg-3 col-md-3 col-sm-3 col-xs-3"><a data-toggle="tab" href="#ảnh1" style="width:100%; height:auto;"><img src="images/iphone-xs-max.jpg"
+                                                alt="" style="width:100%; height:auto;"></a></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a data-toggle="tab" href="#ảnh2" style="width:100%; height:auto;"><img src="images/iphone-xs-max.jpg" alt=""
+                                                style="width:100%; height:auto;"></a></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a data-toggle="tab" href="#ảnh3" style="width:100%; height:auto;"><img src="images/iphone-xs-max.jpg" alt=""
+                                                style="width:100%; height:auto;"></a></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a data-toggle="tab" href="#ảnh4" style="width:100%; height:auto;"><img src="images/iphone-xs-max.jpg" alt=""
+                                                style="width:100%; height:auto;"></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="khuyếnmãi">
+                            <div class="row panel panel-primary chọn" style="width:100%; height:auto">
+                                <div class="panel-heading">Ưu đãi / khuyến mãi:</div>
+                                <div class="panel-body">
+                                    <p>Khách hàng được chọn trong 2 khuyến mãi sau:</p>
+                                    <p>KM 1:</p>
+                                    <ul>
+                                        <li>Trả góp lãi suất 0%</li>
+                                    </ul>
+                                    <p>KM 2:</p>
+                                    <ul>
+                                        <li>Trả 100% giá trị máy và nhận ngay <span>500.000đ</span></li>
+                                    </ul>
+                                    <p>Khách hàng được được nhận khuyến mãi thêm:</p>
+                                    <ul>
+                                        <li>Ốp điện thoại in hình hoạ tiết cao cấp</li>
+                                        <li>Sạc , cáp , tai nghe Zin , hộp (Fullbox)</li>
+                                        <li>Que chọc sim JoyApple , dây cuốn sạc</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row chọn">
+                                <p>Màn hình:</p>
+                                <button type="button" class="btn btn-default" style="width:30%">6.4-inch</button>
+                            </div>
+                            <div class="row chọn">
+                                <p>Dung lượng:</p>
+                                <button type="button" class="btn btn-default" style="width:30%">64GB</button>
+                                <button type="button" class="btn btn-default" style="width:30%">256GB</button>
+                            </div>
+                            <div class="row chọn">
+                                <p>Màu sắc:</p>
+                                <button type="button" class="btn btn-default" style="width:30%;">vàng</button>
+                                <button type="button" class="btn btn-default" style="width:30%">bạc</button>
+                                <button type="button" class="btn btn-default" style="width:30%">xám</button>
+                            </div>
+                            <div class="row chọn">
+                                <strong>Giá: 26.000.000đ</strong>
+                            </div>
+                            <div class="row chọn">
+                                <a href="cart.html" target="_blank"><button type="button" class="btn btn-info" style="width:45.5%">Mua ngay</button></a>
+                                <button type="button" class="btn btn-default" style="width:45.5%">Mua trả góp</button>
+                            </div>
+                            <div class="row chọn">
+                                <p>Cần giúp đỡ mua hàng, gọi ngay:<strong>0921171170</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"  id="detail">
+                        <h1>Thông số kỹ thuật:</h1>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>CPU:</td>
+                                    <td>apple A12</td>
+                                </tr>
+                                <tr>
+                                    <td>Ram:</td>
+                                    <td>4Gb</td>
+                                </tr>
+                                <tr>
+                                    <td>kích thước:</td>
+                                    <td>157.5 x 77.4 x 7.7 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Camera:</td>
+                                    <td>7.0 MP/ Dual Camera 12.0 MP</td>
+                                </tr>
+                                <tr>
+                                    <td>Bộ nhớ trong:</td>
+                                    <td>64Gb</td>
+                                </tr>
+                                <tr>
+                                    <td>Màn hình:</td>
+                                    <td>6.5 inch</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row" id="comment">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3>Phản hồi khách hàng:</h3>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="viết đánh giá của bạn"></textarea>
+                            </div>
+                            <button type="button" class="btn" data-toggle="modal" data-target="#đăngnhập">Gửi phản hồi
+                                của bạn</button>
+                        </div>
+                        <div class="row">
+                            <div class="media col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="media-left col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                    <img src="images/ipad.jpg" class="media-object" style="width:60px">
+                                </div>
+                                <div class="media-body col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                                    <h4 class="media-heading">Left-aligned</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-1"></div>
+            </div>
+        </div>
+        <footer class="footer" id="cuối">
+
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Thông tin JoyApple</span>
+                        <dl>
+                            <dt><a href="about.html">Giới thiệu</a></dt>                              
+                            <dt><a href="about.html">Tuyển dụng</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-center">
+                    <p class="colorlib-widget">
+                    <span>Dịch Vụ & Hỗ Trợ</span>
+                        <dl>
+                            <dt><a href="about.html">Chính sách bảo hành</a></dt>                              
+                            <dt><a href="about.html">Chính sách đổi sản phẩm</a></dt>
+                            <dt><a href="about.html">Hướng dẫn mua hàng</dt>
+                            <dt><a href="about.html">Hỗ trợ</a></dt>
+                        </dl>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="colorlib-widget">
+                        <span>Địa Chỉ & Liên Hệ</span>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8707003953314!2d105.85029731440757!3d21.037858992844725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb89fd3bf01%3A0x2b4e9bc5193fcfab!2zNjRCIMSQxrDhu51uZyBUcuG6p24gTmjhuq10IER14bqtdCwgxJDhu5NuZyBYdcOibiwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1552299520713"
+                        width="100%" height="100%" frameborder="0" style="border:1px solid #999; margin-left: 0%;"
+                        allowfullscreen></iframe>				
+                    </p>
+                    <div class="footer-icons">
+                        
+                        <a href="#"><i class="icon-social-facebook" style="color:blue;"></i></a>
+                        <a href="#"><i class="icon-social-instagram" style="color:palevioletred;"></i></a>
+                        <a href="#"><i class="icon-social-youtube" style="color:red;"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                        <p>
+                                <div class="copy">
+                                        <div class="row">
+                            <span class="block">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Bản quyền &copy;<script>
+                                    document.write(new Date().getFullYear());
+                                </script> thuộc joyApple </span>
+                        </p>
+                    </div>
+            </footer>
+    </div>
+</body>
+
+</html>
